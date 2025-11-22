@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavija.me</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <!--new canva-->
+
+    <link rel="icon" href="kavi-jfr-icon.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="kavi-jfr-icon.png">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      gap: 25px;
+      z-index: 9999;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .content {
+      width: 60%;
+      max-width: 800px;
+      background: #ffffffd6;
+      padding: 40px;
+      margin: 140px auto;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+</style>
+
+<body>
+
+  <header class="header">
+        <a href="index.html" class="Logo"><b>kavijFr</b>
+        
+        <nav class="navbar">
+            <a href="index.html" class="active"><b>Home</b></a>
+            <a href="projects.html"><b>Projects</b></a>
+            <a href="contacts.html"><b>contacts</b></a>
+            
+        </nav>
+ </header>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <section class="about" id="about">
+        <div class="about-text">
+            <p>
+                I'm Kavija Geethika — an undergraduate IT student with a mind full of ideas and a life full of energy. I'm not just someone who studies tech; I live it.
+            </p>
+
+            <p>
+                 I’ve been into content creation and cinematography since early on. With tools like DaVinci Resolve, Adobe Premiere Pro, and pure adrenaline...
+            </p>
+
+             <p>
+                I’ve always believed that life isn’t meant to be one-dimensional. I jump between logic and creativity...
+            </p>
+<br>
+            <p>
+                 Right now, I’m building this site not just to show off what I do.
+            </p>
+
+            <p>
+                There are no awards (yet), but every day I create, explore, break stuff, and come back stronger.
+            </p>
+            
+        </div>
+    </section>
+  </div>
+
+  <div id="particles-js"></div>
+
+
+  <!-- ✅ ✅ ✅ WORKING CANVAS NEST VERSION -->
+  <script src="https://cdn.jsdelivr.net/gh/hustcc/canvas-nest.js/dist/canvas-nest.js"></script>
+
+  <script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 120, density: { enable: true, value_area: 800 } },
+    color: { value: "#aaaaaa" },
+    shape: { type: "circle" },
+    opacity: { value: 0.4, random: false },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 140,
+      color: "#888888",
+      opacity: 0.6,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.2,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      attract: { enable: true, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "grab" },
+      onclick: { enable: false },
+      resize: true
+    },
+    modes: {
+      grab: {
+        distance: 180,
+        line_linked: { opacity: 1 }
+      }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+
+<hr class="footer-line">
+
+    <div class="social-media">
+            <a href="https://www.instagram.com/kavijfr/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#facebook"><i class='bx bxl-facebook' ></i></a>
+            <a href="#youtube"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/kaviigfr"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/kavijageethika/"><i class='bx bxl-linkedin-square'></i></a>
+    </div>
+
+    <footer style="text-align: center; padding: 2rem; font-size: 1.3rem; color: #999;">
+        <hr style="margin-bottom: 1rem;" />
+         © 2024–2025 <span style="color: #9990BA;">Kavijfr</span>. All rights reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kavija.me</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--icons-->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <!--new canva-->
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      gap: 25px;
+      z-index: 9999;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .content {
+      width: 60%;
+      max-width: 800px;
+      background: #ffffffd6;
+      padding: 40px;
+      margin: 140px auto;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+  </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="Logo"><b>kavijFr</b>
+        
+        <nav class="navbar">
+            <a href="index.html"><b>Home</b></a>
+            <a href="projects.html" class="active"><b>Projects</b></a>
+            <a href="contacts.html"><b>contacts</b></a>
+        </nav>
+    </header>
+
+    <div id="particles-js"></div>
+
+  <div class="content">
+      <!-- Projects Section -->
+    <section class="projects-section">
+      <h2 class="heading">Projects</h2>
+
+      <div class="project-card">
+          <h3>Dorms Maintenance System</h3>
+          <p>
+          A Java desktop application built using Swing, MySQL, and the MVC architecture. This system is designed to streamline the process of handling maintenance requests in dormitories through a role-based interface for Students, Technicians, and Admins.
+          </p>
+          <a href="https://github.com/kaviigfr/Dorms_MaintenanceS" target="_blank" class="button">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+          <h3>Inventory and Order Management System</h3>
+          <p>
+          A full-featured system built for grocery store operations, this project manages inventory, suppliers, customer orders, and staff roles with efficiency and precision. It includes user authentication, role-based access, and real-time stock tracking to ensure smooth order processing and improved customer service. Designed for scalability and reliability, the system enhances operational productivity while supporting future growth.
+          </p>
+          <a href="https://github.com/kaviigfr/project_class" target="_blank" class="button">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+          <h3>Results Management System</h3>
+          <p>
+          A Python-based Result Management System that simplifies the process of recording, calculating, and displaying academic results. Built using Python, HTML, and CSS, the system provides an efficient and user-friendly way for teachers to manage student grades, generate report cards, and ensure accessible performance feedback for students and parents.
+          </p>
+          <a href="https://github.com/kaviigfr/RMS" target="_blank" class="button">View on GitHub</a>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="social-media" style="margin-top: 4rem;">
+    <a href="https://www.instagram.com/kavijfr/"><i class='bx bxl-instagram-alt'></i></a>
+    <a href="#facebook"><i class='bx bxl-facebook'></i></a>
+    <a href="#youtube"><i class='bx bxl-youtube'></i></a>
+    <a href="https://github.com/kaviigfr"><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/kavijageethika/"><i class='bx bxl-linkedin-square'></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/hustcc/canvas-nest.js/dist/canvas-nest.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 120, density: { enable: true, value_area: 800 } },
+    color: { value: "#aaaaaa" },
+    shape: { type: "circle" },
+    opacity: { value: 0.4, random: false },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 140,
+      color: "#888888",
+      opacity: 0.6,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.2,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      attract: { enable: true, rotateX: 600, rotateY: 1200 }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "grab" },
+      onclick: { enable: false },
+      resize: true
+    },
+    modes: {
+      grab: {
+        distance: 180,
+        line_linked: { opacity: 1 }
+      }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+
+  <!-- Footer Line + Copyright -->
+  <hr class="footer-line" />
+  <footer style="text-align: center; padding: 2rem; font-size: 1.3rem; color: #999;">
+    © 2024–2025 <span style="color: #9990BA;">Kavijfr</span>. All rights reserved.
+  </footer>
+
+</body>
+</html>
